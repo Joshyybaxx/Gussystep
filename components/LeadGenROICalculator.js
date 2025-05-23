@@ -1,4 +1,3 @@
-
 import { useState } from "react"
 import { Card, CardContent } from "./ui/card"
 import { Input } from "./ui/input"
@@ -65,6 +64,12 @@ export default function LeadGenROICalculator() {
 
   return (
     <div className="bg-black min-h-screen py-10">
+      <div className="text-center text-white mb-6">
+        <h1 className="text-4xl font-bold mb-2">Stop Renting Your Leads. Start Owning Your Pipeline.</h1>
+        <p className="text-md text-zinc-400 max-w-2xl mx-auto">Compare the old model vs the new. See how much profit you're leaving on the table.</p>
+        <p className="text-green-400 text-sm mt-2">✅ Used by top agents at Century 21, Ray White, and Stone Real Estate</p>
+      </div>
+
       <Card className="max-w-4xl mx-auto p-6 bg-zinc-900 shadow-2xl rounded-2xl text-white">
         <CardContent>
           <h2 className="text-3xl font-extrabold text-center mb-6">Lead Gen ROI Calculator</h2>
@@ -104,6 +109,20 @@ export default function LeadGenROICalculator() {
           )}
         </CardContent>
       </Card>
+
+      <div className="text-center text-white mt-14">
+        <div className="max-w-3xl mx-auto p-6 bg-zinc-800 border border-zinc-700 rounded-xl">
+          <h3 className="text-2xl font-bold mb-4">Real Agent Results</h3>
+          <div className="text-sm text-zinc-300 space-y-2">
+            <p className="italic">“$455 ad spend → $52,000 in GCI. It's my secret weapon.” – Ben, Ray White</p>
+            <p className="italic">“2 listings in the first month. Total spend: $10/day.” – Dane Stanley, C21</p>
+          </div>
+          <Button className="mt-6 bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-3 rounded-xl">
+            🔒 Secure My Setup – No Retainers. No Lock-ins.
+          </Button>
+          <p className="text-xs text-zinc-500 mt-2">One-time install. Yours to keep. No BS.</p>
+        </div>
+      </div>
     </div>
   )
 }
